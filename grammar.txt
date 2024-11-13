@@ -1,0 +1,10 @@
+<program> ::= <statement>*
+
+<statement> ::= DO <task_name> <if_statement> COMPLETE
+<task_name> ::= TASK_NAME <identifier>
+<if_statement> ::= IF <condition> <statement_block>
+<condition> ::= <identifier> <comparator> <identifier>
+<statement_block> ::= ASSIGNMENT | <statement>
+<identifier> ::= IDENTIFIER
+<comparator> ::= '<' | '>' | '==' | '!='
+<assignment> ::= IDENTIFIER = IDENTIFIER
