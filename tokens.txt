@@ -1,15 +1,21 @@
-Matched token: DO: DO
-Matched token: TASK_NAME: Task1
-Matched token: IF: IF
-Matched token: IDENTIFIER: a
-Matched token: COMPARATOR: <
-Matched token: IDENTIFIER: b
-Matched token: COMPLETE: COMPLETE
-Matched token: DO: DO
-Matched token: TASK_NAME: Task2
-Matched token: IF: IF
-Matched token: IDENTIFIER: c
-Matched token: COMPARATOR: >
-Matched token: IDENTIFIER: d
-Matched token: COMPLETE: COMPLETE
-Tokens have been written to tokens.txt
+DO: DO
+TASK_NAME: Task1
+IF: IF
+IDENTIFIER: a
+COMPARATOR: <
+IDENTIFIER: b
+COMPLETE: COMPLETE
+DO: DO
+TASK_NAME: Task1
+IF: IF
+IDENTIFIER: a
+COMPARATOR: <
+IDENTIFIER: b
+COMPLETE: COMPLETE
+DO: DO
+TASK_NAME: Task2
+IF: IF
+IDENTIFIER: c
+COMPARATOR: >
+IDENTIFIER: d
+COMPLETE: COMPLETE

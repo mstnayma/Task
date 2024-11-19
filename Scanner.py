@@ -15,7 +15,7 @@ class Scanner:
             (r"COMPLETE", "COMPLETE"),
             (r"PENDING", "PENDING"),
             (r"<|>|==|!=", "COMPARATOR"),
-            (r"[a-zA-Z_][a-zA-Z0-9_]*", "IDENTIFIER"),  # More general identifier pattern
+            (r"[a-zA-Z_][a-zA10-9_]*", "IDENTIFIER"),  # More general identifier pattern
             (r"\s+", None),  # Ignore whitespace
         ]
 
@@ -28,10 +28,10 @@ class Scanner:
                 if match:
                     if token_type:  # Ignore whitespace
                         self.tokens.append((token_type, match.group(0)))
-                    position = match.end()
+                    position = match.end()  # Move position to the end of the matched token
                     break  # Exit the loop once a match is found
             if not match:
-                raise SyntaxError(f"Unexpected character: {self.source_code[position]}")
+                raise SyntaxError(f"Unexpected character: {self.source_code[position]} at position {position}")
 
     def get_tokens(self):
         # Return the list of tokens as strings in the form: 'TOKEN_TYPE: value'
@@ -48,7 +48,7 @@ if __name__ == "__main__":
     try:
         with open(input_file, "r") as file:
             source_code = file.read().strip()  # Strip leading/trailing whitespace here as well
-            print(repr(source_code))  # Debugging: Check the raw content of the file
+            print(f"Raw source code:\n{repr(source_code)}\n")  # Debugging: Check the raw content of the file
     except FileNotFoundError:
         print(f"Error: The file {input_file} does not exist.")
         sys.exit(1)
@@ -58,8 +58,9 @@ if __name__ == "__main__":
     # Tokenize the input program
     scanner.tokenize()
 
-    # Print the tokens directly to the terminal
-    for token in scanner.get_tokens():
-        print(token)
+    # Save the tokens to a file instead of printing to terminal
+    with open("tokens.txt", "w") as token_file:
+        for token in scanner.get_tokens():
+            token_file.write(token + "\n")
 
-    print("Tokenization complete.")
+    print("Tokenization complete. Tokens have been saved to 'tokens.txt'.")
