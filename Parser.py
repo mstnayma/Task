@@ -4,13 +4,19 @@ import json
 # Grammar rules
 grammar = {
     'DO': ['TASK_NAME', 'IF_STATEMENT', 'COMPLETE'],
-    'TASK_NAME': ['Task1', 'Task2', 'Task3'],
+    'TASK_NAME': ['Task1', 'Task2', 'Task3', 'Task4'],
     'IF_STATEMENT': ['IF', 'IDENTIFIER', 'COMPARATOR', 'IDENTIFIER'],
     'IF': ['IF'],
     'COMPLETE': ['COMPLETE'],
     'IDENTIFIER': ['a', 'b', 'c', 'd', 'x', 'y', 'p', 'q'],
     'COMPARATOR': ['<', '>', '==', '!='],
 }
+
+# Function to write the AST to a JSON file
+def write_ast_to_file(ast, filename="ast.json"):
+    with open(filename, "w") as file:
+        json.dump(ast, file, indent=4)
+    print(f"AST successfully written to {filename}")
 
 def parse(tokens):
     ast = []
@@ -114,9 +120,8 @@ def main():
         # Parse the tokens and generate the AST
         ast = parse(tokens)
 
-        # Print out the generated AST
-        print("Generated AST:")
-        print_ast(ast)
+        # Write the AST to a file
+        write_ast_to_file(ast)
     except SyntaxError as e:
         print(f"SyntaxError: {e}")
 

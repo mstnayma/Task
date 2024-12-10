@@ -1,0 +1,13 @@
+[
+    {
+        "DO": {
+            "task_name": "Task1",
+            "if_statement": {
+                "if": "IF",
+                "identifier1": "a",
+                "comparator": "==",
+                "identifier2": "a"
+            }
+        }
+    }
+]

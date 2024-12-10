@@ -1,1 +1,7 @@
-DO Task2 IF x != y COMPLETE
+DO Task1 IF a < b COMPLETE
+DO Task1
+IF a < b
+COMPLETE
+DO Task2
+IF c > d
+COMPLETE

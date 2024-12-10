@@ -1,1 +1,1 @@
-DO Task1 IF a COMPLETE
+DO Task1 IF a == a == b COMPLETE
