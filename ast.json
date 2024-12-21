@@ -6,7 +6,7 @@
                 "if": "IF",
                 "identifier1": "a",
                 "comparator": "==",
-                "identifier2": "a"
+                "identifier2": "b"
             }
         }
     }

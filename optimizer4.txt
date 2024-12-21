@@ -1,0 +1,17 @@
+DO Task1
+IF 0 == 1
+    a = 10 + 5
+    b = a * 2
+    COMPLETE
+DO Task2
+IF 3 == 3
+    c = 4 + 6
+    d = c + 10
+    IF 1 == 0
+        e = d * 2
+    COMPLETE
+DO Task3
+z = 5 * 2
+IF 4 == 2
+    y = z + 1
+    COMPLETE

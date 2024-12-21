@@ -1,0 +1,14 @@
+DO Task1
+x = 4 + 6
+y = x + 3
+z = x + 3
+w = y * 2
+IF x == 10
+    v = w + z
+    COMPLETE
+DO Task2
+m = 5 * 4
+n = m + 5
+IF m == 20
+    p = n + 10
+    COMPLETE

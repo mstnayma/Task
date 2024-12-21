@@ -1,0 +1,20 @@
+x = 5
+y = x + 3
+z = y * 2
+if 0 == 1:
+    x = 10
+    y = 20
+    z = 30
+if x == 5:
+    a = x + 3
+    b = y * 2
+    c = z - 4
+    x = 7
+x = x + 1
+for i = 0 TO 4:
+    z = x * 2
+    x = x + 1
+    y = z + x
+    for j = 0 TO 2:
+        x = x + 2
+        y = y + 3

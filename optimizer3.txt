@@ -1,0 +1,14 @@
+DO Task1
+FOR i = 0 TO 2
+    x = i + 2
+    y = x * 3
+    IF y == 12
+        z = y + 5
+    COMPLETE
+DO Task2
+FOR j = 1 TO 2
+    a = j * 3
+    b = a + 5
+    IF a == 9
+        c = b + 2
+    COMPLETE

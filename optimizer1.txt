@@ -1,0 +1,13 @@
+DO Task1
+IF 5 + 3 == 8
+    COMPLETE
+DO Task2
+IF 0 == 1
+    COMPLETE
+DO Task3
+x = a * b
+y = a * b
+DO Task4
+FOR i = 0 TO 2
+    x = x + 1
+COMPLETE
