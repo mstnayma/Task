@@ -1,4 +1,6 @@
-Optimizer README
+VIDEO: https://youtu.be/MADI7dtj__I
+
+Optimizer README for IA4:
 This project implements several optimization techniques aimed at improving the efficiency and performance of code. 
 The optimizer processes input code files and applies the following techniques:
 
